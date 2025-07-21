@@ -1,5 +1,0 @@
-python -m venv .chat
-.chat\scripts\activate
-pip install fastapi uvicorn requests
-pip install python-multipart
-uvicorn app:app --reload
