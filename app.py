@@ -5,7 +5,7 @@ import requests
 app = FastAPI()
 
 API_KEY = "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"
-API_URL = "https://openrouter.ai/api/v1/chat/completions"
+API_URL = "https://huggingface.co/ibm%E2%80%91granite/granite%E2%80%913.2%E2%80%912b%E2%80%91instruct"
 
 HTML_PAGE = """
 <!DOCTYPE html>
@@ -248,7 +248,7 @@ async def chat(message: str = Form(...)):
         "Content-Type": "application/json"
     }
     payload = {
-        "model": "mistralai/mistral-7b-instruct",
+        "model": "IBM Granite 3.2‑2B‑Instruct",
         "messages": [{"role": "user", "content": message}]
     }
     try:
